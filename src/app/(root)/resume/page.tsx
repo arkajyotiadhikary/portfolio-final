@@ -1,13 +1,8 @@
 import Link from "next/link";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-      faGithub,
-      faLinkedin,
-      faStackOverflow,
-      faLetterboxd,
-} from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faFile, faLocation, faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faLinkedin, faStackOverflow } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope, faFile, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
 const Resume = () => {
       return (
@@ -19,21 +14,21 @@ const Resume = () => {
                                     <h1 className="text-3xl font-bold">Arka Jyoti Adhikary</h1>
                                     <div className="text-sm">
                                           <p className="mt-5 sm:text-base">
-                                                Fullstack Software Developer
+                                                {`Fullstack Software Developer`}
                                           </p>
                                           <p className="mt-5 flex items-center gap-1">
                                                 <FontAwesomeIcon
                                                       className="w-5 h-5 mr-2"
                                                       icon={faEnvelope}
                                                 />
-                                                arkajyotiadhikary15@gmail.com
+                                                {`arkajyotiadhikary15@gmail.com`}
                                           </p>
                                           <p className="mt-5 flex items-center gap-1">
                                                 <FontAwesomeIcon
                                                       className="w-5 h-5 mr-2"
                                                       icon={faLocationDot}
                                                 />
-                                                Guwahati, Assam, India
+                                                {`Guwahati, Assam, India`}
                                           </p>
                                     </div>
                               </div>
@@ -108,17 +103,17 @@ const Resume = () => {
                                     Experience
                               </h1>
                               <div className="mb-5">
-                                    <h2 className="text-4xl font-bold text-primary">29 Kreativ</h2>
+                                    <h2 className="text-4xl font-bold text-primary">{`29 Kreativ`}</h2>
                                     <div>
-                                          <p className="text-lg font-semibold">Software Engineer</p>
-                                          <p className="text-sm italic">Aug 2022 - Mar 2024</p>
+                                          <p className="text-lg font-semibold">{`Software Engineer`}</p>
+                                          <p className="text-sm italic">{`Aug 2022 - Mar 2024`}</p>
                                     </div>
                                     <p className="my-3">
-                                          Responsible for developing Web and Mobile Application
+                                          {`Responsible for developing Web and Mobile Application`}
                                     </p>
                                     <ul className="my-3 list-inside list-disc">
                                           <li>
-                                                Enhanced Charli AI's geospatial intelligence
+                                                Enhanced Charli AI&apos;s geospatial intelligence
                                                 capabilities by successfully integrating ArcGIS
                                                 APIs, enabling advanced mapping functionalities for
                                                 data-driven decision-making.
@@ -157,13 +152,13 @@ const Resume = () => {
                                     <h2 className="text-4xl font-bold text-primary">IIT Indore</h2>
                                     <div>
                                           <p className="text-lg font-semibold">
-                                                Machine Learning And Python
+                                                {`Machine Learning And Python`}
                                           </p>
-                                          <p className="text-sm italic">Oct 2019 - Jan 2020</p>
+                                          <p className="text-sm italic">{`Oct 2019 - Jan 2020`}</p>
                                     </div>
                                     <p className="my-3">
-                                          Responsible for developing web interface for fingerprint
-                                          security system
+                                          {` Responsible for developing web interface for fingerprint
+                                          security system`}
                                     </p>
                                     <ul className="my-3 list-inside list-disc">
                                           <li>Convert matlab codes to python.</li>
@@ -184,9 +179,9 @@ const Resume = () => {
                                     </h2>
                                     <div>
                                           <p className="text-lg font-semibold">
-                                                Computer Science and Technology
+                                                {`Computer Science and Technology`}
                                           </p>
-                                          <p className="text-sm italic">Oct 2018 - Jun 2022</p>
+                                          <p className="text-sm italic">{`Oct 2018 - Jun 2022`}</p>
                                     </div>
                               </div>
                         </div>

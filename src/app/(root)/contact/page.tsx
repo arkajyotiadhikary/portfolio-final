@@ -6,10 +6,10 @@ const Contact = () => {
                         <h1 className="text-5xl font-bold">Contact</h1>
                         <div className="my-3 text-lg">
                               <p>
-                                    I'm always open to discussing product design work or partnership
-                                    opportunities. Let's chat.
+                                    {`I'm always open to discussing product design work or partnership
+                                    opportunities. Let's chat.`}
                               </p>
-                              <p className="my-3 mt-2">Alternate email: arka.as.123@gmail.com</p>
+                              <p className="my-3 mt-2">{`Alternate email: arka.as.123@gmail.com`}</p>
                         </div>
                   </div>
                   <div className="group rounded-3xl bg-cool_gray shadow shadow-space_cadet-900 p-8 ">
