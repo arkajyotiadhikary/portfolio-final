@@ -17,7 +17,7 @@ const TechStack = () => {
 
                   <Link href={"/"}>
                         <Image
-                              className="filter invert"
+                              className="filter dark:invert"
                               src={"/next.svg"}
                               alt={"react"}
                               width={80}
@@ -37,7 +37,13 @@ const TechStack = () => {
                         <Image src={"/vitejs.svg"} alt={"react"} width={80} height={80} />
                   </Link>
                   <Link href={"/"}>
-                        <Image src={"/aws-2.svg"} alt={"react"} width={80} height={80} />
+                        <Image
+                              className="filter dark:invert"
+                              src={"/aws-2.svg"}
+                              alt={"react"}
+                              width={80}
+                              height={80}
+                        />
                   </Link>
             </div>
       );

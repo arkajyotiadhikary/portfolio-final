@@ -9,7 +9,7 @@ export default function Home() {
       return (
             <div className="h-full">
                   <div className="grid gap-5 px-8 md:grid-cols-3 lg:grid-cols-4">
-                        <div className="group rounded-3xl bg-cool_gray p-8 col-span-3 lg:col-span-2 hover:bg-cool_gray-100 hover:border-cool_gray-300 hover:shadow hover:shadow-space_cadet-900 transition-all duration-500 md:col-auto">
+                        <div className="group rounded-3xl bg-light-secondary dark:bg-dark-secondary light:bg-white p-8 col-span-3 lg:col-span-2 hover:bg-light-secondary hover:dark:bg-dark-primary hover:border-cool_gray-300 hover:shadow hover:shadow-space_cadet-900 transition-all duration-500 md:col-auto">
                               <Link
                                     href="/about"
                                     className="flex h-full flex-col justify-between gap-10"
@@ -23,11 +23,11 @@ export default function Home() {
                                           />
                                     </div>
                                     <div>
-                                          <h1 className="mb-3 flex items-center gap-2 text-3xl font-bold">
+                                          <h1 className=" text-light-text dark:text-dark-text mb-3 flex items-center gap-2 text-3xl font-bold">
                                                 Hey, I&apos;m Arka
                                           </h1>
                                           <div className="flex-between">
-                                                <p className="md:text-lg">
+                                                <p className="md:text-lg text-light-text dark:text-dark-text">
                                                       {`🚀 Passionate React/React Native Developer |
                                                       💻 Proficient in Node.js | 📊 Experienced with
                                                       PostgreSQL & MongoDB | 🔧 Building Scalable &
@@ -37,36 +37,53 @@ export default function Home() {
                                     </div>
                               </Link>
                         </div>
-                        <div className="group rounded-3xl bg-cool_gray p-8 col-span-3 md:col-auto hover:bg-cool_gray-100 hover:border-cool_gray-300 hover:shadow hover:shadow-space_cadet-900 transition-all duration-500">
+                        <div className="group rounded-3xl bg-light-secondary dark:bg-dark-secondary p-8 col-span-3 md:col-auto hover:bg-light-primary hover:dark:bg-dark-primary hover:border-cool_gray-300 hover:shadow hover:shadow-space_cadet-900 transition-all duration-500">
                               <Link
                                     className="flex h-full flex-row items-center justify-start gap-10 md:flex-col md:items-start md:justify-between"
                                     href="/resume"
                               >
-                                    <FontAwesomeIcon icon={faFilePdf} className="h-28" />
-                                    <h1 className="text-3xl font-semibold">Resume</h1>
+                                    <FontAwesomeIcon
+                                          icon={faFilePdf}
+                                          className="h-28 text-light-text dark:text-dark-text"
+                                    />
+                                    <h1 className="text-3xl font-semibold text-light-text dark:text-dark-text">
+                                          Resume
+                                    </h1>
                               </Link>
                         </div>
-                        <div className="group rounded-3xl bg-cool_gray p-8 col-span-3 md:col-auto hover:bg-cool_gray-100 hover:border-cool_gray-300 hover:shadow hover:shadow-space_cadet-900 transition-all duration-500">
+                        <div className="group rounded-3xl bg-light-secondary dark:bg-dark-secondary p-8 col-span-3 md:col-auto hover:bg-light-secondary hover:dark:bg-dark-primary hover:border-cool_gray-300 hover:shadow hover:shadow-space_cadet-900 transition-all duration-500">
                               <Link
                                     className="flex h-full flex-row items-center justify-start gap-10 md:flex-col md:items-start md:justify-between"
                                     href="https://github.com/arkajyotiadhikary"
                               >
-                                    <FontAwesomeIcon icon={faGithub} className="h-28" />
-                                    <h1 className="text-3xl font-semibold">Github</h1>
+                                    <FontAwesomeIcon
+                                          icon={faGithub}
+                                          className="h-28 text-light-text dark:text-dark-text"
+                                    />
+                                    <h1 className="text-3xl font-semibold text-light-text dark:text-dark-text">
+                                          Github
+                                    </h1>
                               </Link>
                         </div>
-                        <div className="group rounded-3xl bg-cool_gray p-8 col-span-3 md:col-auto hover:bg-cool_gray-100 hover:border-cool_gray-300 hover:shadow hover:shadow-space_cadet-900 transition-all duration-500">
+                        <div className="group rounded-3xl bg-light-secondary dark:bg-dark-secondary p-8 col-span-3 md:col-auto hover:bg-light-secondary hover:dark:bg-dark-primary hover:border-cool_gray-300 hover:shadow hover:shadow-space_cadet-900 transition-all duration-500">
                               <Link
                                     className="flex h-full flex-row items-center justify-start gap-10 md:flex-col md:items-start md:justify-between"
                                     href="/"
                               >
-                                    <FontAwesomeIcon icon={faListCheck} className="h-28" />
-                                    <h1 className="text-3xl font-semibold">Projects</h1>
+                                    <FontAwesomeIcon
+                                          icon={faListCheck}
+                                          className="h-28 text-light-text dark:text-dark-text"
+                                    />
+                                    <h1 className="text-3xl font-semibold text-light-text dark:text-dark-text">
+                                          Projects
+                                    </h1>
                               </Link>
                         </div>
-                        <div className="group rounded-3xl bg-cool_gray p-8 col-span-3 hover:bg-cool_gray-100 hover:border-cool_gray-300 hover:shadow hover:shadow-space_cadet-900 transition-all duration-500">
+                        <div className="group rounded-3xl bg-light-secondary dark:bg-dark-secondary p-8 col-span-3 hover:bg-light-secondary hover:dark:bg-dark-primary hover:border-cool_gray-300 hover:shadow hover:shadow-space_cadet-900 transition-all duration-500">
                               <div className="flex h-full flex-col justify-between gap-10">
-                                    <h1 className="text-3xl font-semibold">Tech Stack</h1>
+                                    <h1 className="text-3xl font-semibold text-light-text dark:text-dark-text">
+                                          Tech Stack
+                                    </h1>
                                     <TechStack />
                               </div>
                         </div>

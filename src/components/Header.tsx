@@ -3,20 +3,31 @@ import HeaderName from "./HeaderName";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
+import ThemeSwitch from "./ThemeSwitch";
 
 const Header = () => {
       return (
-            <nav className="sticky top-0 flex justify-between w-full p-5 bg-space_cadet z-10">
+            <nav className="sticky top-0 flex justify-between w-full p-5 bg-light-background dark:bg-dark-background z-10">
                   {/* name */}
                   <HeaderName />
                   {/* about and resume */}
                   <div className="hidden md:flex">
                         <ul className="flex items-center gap-10">
                               <li>
-                                    <Link href={"/about"}>About</Link>
+                                    <Link
+                                          className="font-bold text-dark-primary dark:text-light-primary"
+                                          href={"/about"}
+                                    >
+                                          About
+                                    </Link>
                               </li>
                               <li>
-                                    <Link href={"/resume"}>Resume</Link>
+                                    <Link
+                                          className="font-bold text-dark-primary dark:text-light-primary"
+                                          href={"/resume"}
+                                    >
+                                          Resume
+                                    </Link>
                               </li>
                         </ul>
                   </div>
@@ -26,16 +37,13 @@ const Header = () => {
                   <div className="flex items-center gap-2">
                         <Link
                               href={"/contact"}
-                              className="bg-primary px-5 py-2 bg-gradient-to-tr from-fire_engine_red to-fire_engine rounded-3xl focus:outline-none transition-colors duration-500 hover:bg-primary-darker"
+                              className=" px-5 py-2 me-2 rounded-3xl border-2 dark:border-light-primary border-dark-primary focus:outline-none transition-colors duration-500 hover:bg-primary-darker bg-light-secondary dark:bg-dark-secondary dark:hover:bg-dark-primary"
                         >
-                              <span className="text-white text-lg font-bold">Get in touch</span>
+                              <span className="text-dark-primary dark:text-light-primary text-lg font-bold">
+                                    Get in touch
+                              </span>
                         </Link>
-                        <button className="group btn border rounded-full swap btn-ghost swap-rotate p-2 hover:bg-gray-700 hover:text-white">
-                              <FontAwesomeIcon
-                                    icon={faSun}
-                                    className="swap-off fill-current w-5 h-5 text-yellow-500 group-hover:text-white"
-                              />
-                        </button>
+                        <ThemeSwitch />
                   </div>
             </nav>
       );

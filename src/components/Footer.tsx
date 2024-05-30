@@ -6,7 +6,7 @@ import React from "react";
 
 const Footer = () => {
       return (
-            <div className="flex flex-col items-center my-10 mx-auto mb-5">
+            <div className="flex flex-col items-center my-10 mx-auto mb-5 text-light-text dark:text-dark-text">
                   <div className="flex flex-center mb-4 gap-10 ">
                         <Link href={"/"}>
                               <FontAwesomeIcon className="h-5" icon={faGithub} />
@@ -20,7 +20,7 @@ const Footer = () => {
                   </div>
                   <p className="flex flex-center gap-2 text-sm">
                         Made with
-                        <FontAwesomeIcon className="text-red-500 h-5" icon={faHeart} />
+                        <FontAwesomeIcon className=" text-light-error h-5" icon={faHeart} />
                   </p>
             </div>
       );

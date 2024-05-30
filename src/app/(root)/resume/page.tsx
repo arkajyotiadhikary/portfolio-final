@@ -6,24 +6,24 @@ import { faEnvelope, faFile, faLocationDot } from "@fortawesome/free-solid-svg-i
 
 const Resume = () => {
       return (
-            <div className="grid grid-cols-3 gap-20 px-5 sm:px-2">
+            <div className="grid grid-cols-3 gap-20 px-5 sm:px-2 text-light-text dark:text-dark-text">
                   <div className="col-span-3 lg:col-span-1">
                         <div className="flex flex-center sticky top-20 h-full flex-col gap-5 md:flex-row lg:h-auto lg:flex-col">
                               {/* personal details */}
                               <div className="group rounded-3xl bg-cool_gray shadow shadow-space_cadet-900 p-8">
-                                    <h1 className="text-3xl font-bold">Arka Jyoti Adhikary</h1>
+                                    <h1 className="text-3xl font-bold ">Arka Jyoti Adhikary</h1>
                                     <div className="text-sm">
-                                          <p className="mt-5 sm:text-base">
+                                          <p className="mt-5 sm:text-base ">
                                                 {`Fullstack Software Developer`}
                                           </p>
-                                          <p className="mt-5 flex items-center gap-1">
+                                          <p className="mt-5 flex items-center gap-1 ">
                                                 <FontAwesomeIcon
                                                       className="w-5 h-5 mr-2"
                                                       icon={faEnvelope}
                                                 />
                                                 {`arkajyotiadhikary15@gmail.com`}
                                           </p>
-                                          <p className="mt-5 flex items-center gap-1">
+                                          <p className="mt-5 flex items-center gap-1 ">
                                                 <FontAwesomeIcon
                                                       className="w-5 h-5 mr-2"
                                                       icon={faLocationDot}
@@ -41,15 +41,15 @@ const Resume = () => {
                                           rel="noopener noreferrer"
                                     >
                                           <FontAwesomeIcon
-                                                className="w-5 h-5 mr-2"
+                                                className="w-5 h-5 mr-2 "
                                                 icon={faGithub}
                                           />
-                                          <span className=" hover:text-gray-200 transition-colors duration-500">
+                                          <span className=" hover:text-gray-200 transition-colors duration-500  ">
                                                 Github
                                           </span>
                                     </Link>
                                     <Link
-                                          className="flex items-center justify-center border p-4 hover:bg-cool_gray-100 hover:border-cool_gray-300 hover:shadow hover:shadow-space_cadet-900 transition-all duration-500 rounded-lg bg-gray-700 hover:bg-gray-800 "
+                                          className="flex items-center justify-center border p-4 hover:bg-cool_gray-100 hover:border-cool_gray-300 hover:shadow hover:shadow-space_cadet-900 transition-all duration-500 rounded-lg bg-gray-700 hover:bg-gray-800  "
                                           href={
                                                 "https://www.linkedin.com/in/arka-jyoti-adhikary-302a65205/"
                                           }
@@ -57,7 +57,7 @@ const Resume = () => {
                                           rel="noopener noreferrer"
                                     >
                                           <FontAwesomeIcon
-                                                className="w-5 h-5 mr-2 "
+                                                className="w-5 h-5 mr-2"
                                                 icon={faLinkedin}
                                           />
                                           <span className="hover:text-gray-200 transition-colors duration-500">
